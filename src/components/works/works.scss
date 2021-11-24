@@ -1,0 +1,77 @@
+@import "../../global.scss";
+
+.works {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+
+  .tilte {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: $mainColor;
+
+    .icon {
+      font-size: 45px;
+      padding-right: 10px;
+      color: inherit;
+    }
+
+    h1 {
+      font-family: "Inconsolata", monospace;
+      font-size: 45px;
+      color: inherit;
+    }
+  }
+
+  .container {
+    display: flex;
+    background-color: #cfcfcf;
+    flex-direction: row;
+    flex: 6;
+    margin: 15px;
+    border-radius: 15px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    overflow: hidden;
+
+    .professional {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .education {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .arrowDownAnc {
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+
+    .arrowDown {
+      font-size: 40px;
+      color: $mainColor;
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0%;
+      }
+    }
+  }
+}

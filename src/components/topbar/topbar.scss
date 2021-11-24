@@ -1,0 +1,92 @@
+@import "../../global.scss";
+
+.topbar {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  color: $mainColor;
+  transition: all 2s ease;
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        font-size: 40px;
+        font-family: "Inconsolata", monospace;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 40px;
+      }
+
+      .itemContainer {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        .icon {
+          color: inherit;
+          margin-right: 10px;
+        }
+
+        span {
+          color: inherit;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      .hamburger {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        overflow: hidden;
+
+        span {
+          width: 100%;
+          height: 3px;
+          background-color: $mainColor;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+      }
+    }
+  }
+
+  &.active {
+    background-color: $mainColor;
+    color: white;
+
+    .hamburger {
+      overflow: hidden;
+      span {
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

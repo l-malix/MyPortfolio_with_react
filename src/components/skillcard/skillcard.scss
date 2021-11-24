@@ -1,0 +1,64 @@
+@import "../../global.scss";
+
+.skillcard {
+  background-color: #cfcfcf;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  border-radius: 25px;
+  margin: 10px;
+  transition: all 1s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:hover {
+    .infos {
+      background-color: $mainColor;
+      color: white;
+      .skillbar {
+        background-color: white;
+        .skillperc {
+          background-color: #cfcfcf;
+        }
+      }
+    }
+  }
+
+  .icon {
+    flex: 1;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 80%;
+    }
+  }
+
+  .infos {
+    transition: all 1s ease;
+    flex: 2;
+
+    h3 {
+      margin-left: 10px;
+      padding: 15px;
+      font-weight: 600;
+      font-family: "Inconsolata", monospace;
+    }
+
+    .skillbar {
+      width: 80%;
+      background-color: #fff;
+      height: 30px;
+      margin-left: 15px;
+      border-radius: 5px;
+      transition: all 1s ease;
+
+      .skillperc {
+        width: 70%;
+        background-color: $mainColor;
+        height: 30px;
+        transition: all 1s ease;
+      }
+    }
+  }
+}

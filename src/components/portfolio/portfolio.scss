@@ -1,0 +1,67 @@
+@import "../../global.scss";
+
+.portfolio {
+  background-color: white;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $mainColor;
+    h2 {
+      font-size: 40px;
+      color: inherit;
+      font-family: "Inconsolata", monospace;
+    }
+    .icon {
+      font-size: 50px;
+      color: inherit;
+      margin-right: 10px;
+    }
+  }
+
+  .projectsContainers {
+    flex: 5;
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; // for firefox
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .arrowDownAnc {
+    position: absolute;
+    bottom: 5px;
+
+    .arrowDown {
+      font-size: 40px;
+      color: $mainColor;
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0%;
+      }
+    }
+  }
+}

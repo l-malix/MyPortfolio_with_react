@@ -1,0 +1,93 @@
+@import "../../global.scss";
+
+.intro {
+  background-color: white;
+  display: flex;
+
+  .left {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .imageContainer {
+      background-color: $mainColor;
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: all 1s ease;
+      img {
+        border-radius: 50%;
+        width: 90%;
+        height: 90;
+      }
+
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+
+    .socialNets {
+      margin: 30px;
+
+      a {
+        margin-left: 10px;
+        .icon {
+          font-size: 35px;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+
+  .right {
+    background-color: $mainColor;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .description {
+      color: white;
+      margin: 0px 40px;
+      font-family: "Inconsolata", monospace;
+      h2 {
+        font-family: inherit;
+        font-size: 45px;
+        margin-bottom: 25px;
+      }
+      p {
+        font-family: inherit;
+        font-size: 25px;
+      }
+      h1 {
+        font-family: inherit;
+        font-size: 60px;
+        margin-bottom: 10px;
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 5px;
+
+      .arrowDown {
+        font-size: 40px;
+        color: white;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0%;
+        }
+      }
+    }
+  }
+}
