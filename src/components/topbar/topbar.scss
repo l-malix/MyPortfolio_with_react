@@ -34,6 +34,10 @@
         align-items: center;
         margin-right: 20px;
 
+        @include mobile {
+          display: none;
+        }
+
         .icon {
           color: inherit;
           margin-right: 10px;

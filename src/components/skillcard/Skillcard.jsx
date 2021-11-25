@@ -1,20 +1,14 @@
 import React from "react";
 import "./skillcard.scss";
 
-export default function Skillcard() {
+export default function Skillcard(props) {
   return (
     <div className="skillcard">
       <div className="icon">
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-          alt=""
-        />
+        <img src={props.logo} alt="" />
       </div>
       <div className="infos">
-        <h3>Python</h3>
-        <div className="skillbar">
-          <div className="skillperc"></div>
-        </div>
+        <h3>{props.title}</h3>
       </div>
     </div>
   );

@@ -18,11 +18,15 @@
       font-size: 40px;
       color: inherit;
       font-family: "Inconsolata", monospace;
+      @include mobile {
+        font-size: 30px;
+      }
     }
     .icon {
       font-size: 50px;
       color: inherit;
       margin-right: 10px;
+      font-size: 40px;
     }
   }
 

@@ -47,7 +47,7 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <div className="title">
         <CodeIcon className="icon" />
-        <h2>MY OPEN SOURCE PROJECTS</h2>
+        <h2>MY PROJECTS</h2>
       </div>
       <div className="projectsContainers">{project}</div>
       <a className="arrowDownAnc" href="#works">

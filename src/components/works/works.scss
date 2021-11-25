@@ -18,12 +18,18 @@
       font-size: 45px;
       padding-right: 10px;
       color: inherit;
+      @include mobile {
+        font-size: 35px;
+      }
     }
 
     h1 {
       font-family: "Inconsolata", monospace;
       font-size: 45px;
       color: inherit;
+      @include mobile {
+        font-size: 35px;
+      }
     }
   }
 
@@ -31,6 +37,9 @@
     display: flex;
     background-color: #cfcfcf;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     flex: 6;
     margin: 15px;
     border-radius: 15px;
@@ -39,21 +48,9 @@
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-    overflow: hidden;
-
-    .professional {
-      display: flex;
-      flex: 1;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    .education {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    scrollbar-width: none; // for firefox
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 

@@ -4,6 +4,10 @@
   background-color: white;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .left {
     display: flex;
     flex: 1;
@@ -11,6 +15,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include mobile {
+      flex: 2;
+    }
 
     .imageContainer {
       background-color: $mainColor;
@@ -22,6 +30,12 @@
       overflow: hidden;
       border-radius: 50%;
       transition: all 1s ease;
+
+      @include mobile {
+        width: 160px;
+        height: 160px;
+      }
+
       img {
         border-radius: 50%;
         width: 90%;
@@ -40,6 +54,7 @@
         margin-left: 10px;
         .icon {
           font-size: 35px;
+
           color: $mainColor;
         }
       }
@@ -58,19 +73,32 @@
       color: white;
       margin: 0px 40px;
       font-family: "Inconsolata", monospace;
+      @include mobile {
+        margin: 0px 20px;
+      }
       h2 {
         font-family: inherit;
         font-size: 45px;
         margin-bottom: 25px;
+        @include mobile {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
       }
       p {
         font-family: inherit;
         font-size: 25px;
+        @include mobile {
+          font-size: 20px;
+        }
       }
       h1 {
         font-family: inherit;
         font-size: 60px;
         margin-bottom: 10px;
+        @include mobile {
+          font-size: 30px;
+        }
       }
     }
     a {

@@ -19,9 +19,6 @@ export default function Works() {
       date: "July 2020",
       place: "Nantes - France",
     },
-  ];
-
-  const education = [
     {
       logo: "assets/ecn.png",
       title: "Data science | CS | Finance",
@@ -45,7 +42,7 @@ export default function Works() {
     },
   ];
 
-  let pro = professional.map(function (p) {
+  const pro = professional.map(function (p) {
     return (
       <Expcard
         className="expcard"
@@ -58,29 +55,14 @@ export default function Works() {
     );
   });
 
-  let edu = education.map(function (e) {
-    return (
-      <Expcard
-        className="expcard"
-        logo={e.logo}
-        title={e.title}
-        company={e.company}
-        date={e.date}
-        place={e.place}
-      />
-    );
-  });
-
   return (
     <div className="works" id="works">
       <div className="tilte">
         <ArticleIcon className="icon" />
         <h1>MY RESUME</h1>
       </div>
-      <div className="container">
-        <div className="professional">{pro}</div>
-        <div className="education">{edu}</div>
-      </div>
+
+      <div className="container">{pro}</div>
 
       <a className="arrowDownAnc" href="#testimonials">
         <KeyboardArrowDownIcon className="arrowDown" />
