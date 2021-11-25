@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/malix_portfolio/static/css/main.5dba03ea.chunk.css",
+    "main.js": "/malix_portfolio/static/js/main.81dc1604.chunk.js",
+    "main.js.map": "/malix_portfolio/static/js/main.81dc1604.chunk.js.map",
+    "runtime-main.js": "/malix_portfolio/static/js/runtime-main.313ecea6.js",
+    "runtime-main.js.map": "/malix_portfolio/static/js/runtime-main.313ecea6.js.map",
+    "static/js/2.0d91e0af.chunk.js": "/malix_portfolio/static/js/2.0d91e0af.chunk.js",
+    "static/js/2.0d91e0af.chunk.js.map": "/malix_portfolio/static/js/2.0d91e0af.chunk.js.map",
+    "index.html": "/malix_portfolio/index.html",
+    "static/css/main.5dba03ea.chunk.css.map": "/malix_portfolio/static/css/main.5dba03ea.chunk.css.map",
+    "static/js/2.0d91e0af.chunk.js.LICENSE.txt": "/malix_portfolio/static/js/2.0d91e0af.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.313ecea6.js",
+    "static/js/2.0d91e0af.chunk.js",
+    "static/css/main.5dba03ea.chunk.css",
+    "static/js/main.81dc1604.chunk.js"
+  ]
+}
