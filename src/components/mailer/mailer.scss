@@ -1,0 +1,73 @@
+@import "../../global.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cfcfcf;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: $mainColor;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer */
+    color: $mainColor;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    color: $mainColor;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  textarea,
+  input {
+    margin-bottom: 20px;
+    width: 30vw;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: "Inconsolata", monospace;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2;
+    color: $mainColor;
+    font-weight: 600;
+    font-size: 15px;
+
+    @include mobile {
+      width: 80vw;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    width: 100px;
+    font-family: "Inconsolata", monospace;
+    color: white;
+    background-color: $mainColor;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $mainColor;
+      background-color: white;
+    }
+  }
+}

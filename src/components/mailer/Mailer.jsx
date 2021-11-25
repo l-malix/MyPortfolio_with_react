@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import "./mailer.scss";
 
 export default function Mailer() {
   function sendEmail(e) {
@@ -18,7 +19,7 @@ export default function Mailer() {
   }
   return (
     <div>
-      <form onSubmit={sendEmail}>
+      <form className="container" onSubmit={sendEmail}>
         <input className="name" name="name" placeholder="Your name" />
         <input className="email" name="email" placeholder="Your e-mail" />
         <input className="subject" name="subject" placeholder="Subject" />
@@ -28,7 +29,9 @@ export default function Mailer() {
           placeholder="What's in your mind?"
           rows="4"
         />
-        <input className="submit" name="submit" type="submit" value="Send" />
+        <button className="submit" name="submit" type="submit" value="Send">
+          Submit
+        </button>
       </form>
     </div>
   );

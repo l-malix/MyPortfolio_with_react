@@ -1,3 +1,65 @@
-.contact {
-  background-color: lightblue;
+@import "../../global.scss";
+
+.contactPage {
+  display: flex;
+  flex-direction: column;
+
+  .contact {
+    background-color: white;
+    display: flex;
+    flex: 10;
+
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $mainColor;
+      transition: all 0.33s ease;
+
+      &:hover {
+        background-color: $mainColor;
+        color: white;
+      }
+
+      h1 {
+        font-family: "Inconsolata", monospace;
+        font-weight: 600;
+        font-size: 60px;
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: all 0.33s ease;
+
+      &:hover {
+        background-color: $mainColor;
+        color: white;
+      }
+    }
+  }
+
+  .footer {
+    flex: 1;
+    background-color: $mainColor;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-family: "Inconsolata", monospace;
+      font-weight: 500;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
 }
