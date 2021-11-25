@@ -38,9 +38,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
-    border-radius: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
     overflow: auto;
+    width: 100vw;
     scroll-snap-type: y mandatory;
     scrollbar-width: none; // for firefox
     &::-webkit-scrollbar {
