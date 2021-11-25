@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  justify-content: center;
 
   .tilte {
     display: flex;
@@ -34,16 +33,18 @@
   }
 
   .container {
+    margin: 0;
     display: flex;
     background-color: #cfcfcf;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex: 6;
-    margin: 15px;
+    width: 90vw;
+    margin-top: 15px;
     border-radius: 15px;
-    border-radius: 20px;
+
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
