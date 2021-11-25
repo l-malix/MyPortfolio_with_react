@@ -45,7 +45,6 @@ export default function Works() {
   const pro = professional.map(function (p) {
     return (
       <Expcard
-        className="expcard"
         logo={p.logo}
         title={p.title}
         company={p.company}

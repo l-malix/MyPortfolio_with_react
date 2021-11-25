@@ -17,6 +17,9 @@
   }
 
   .image {
+    @include mobile {
+      display: none;
+    }
     background-color: #cfcfcf;
     img {
       width: 130px;
@@ -29,11 +32,6 @@
     align-items: center;
   }
 
-  .separator {
-    flex: 0.05;
-    background-color: $mainColor;
-  }
-
   .infos {
     padding-right: 15px;
     flex: 5;
@@ -43,6 +41,9 @@
     margin-left: 15px;
 
     h1 {
+      @include mobile {
+        font-size: 15px;
+      }
       font-size: 25px;
       font-family: "Inconsolata", monospace;
       font-weight: normal;
@@ -56,6 +57,9 @@
       margin-bottom: 20px;
 
       h2 {
+        @include mobile {
+          font-size: 10px;
+        }
         margin-left: 10px;
         font-size: 20px;
         font-family: "Inconsolata", monospace;
@@ -69,6 +73,9 @@
       margin-bottom: 10px;
 
       p {
+        @include mobile {
+          font-size: 10px;
+        }
         margin-right: 20px;
         margin-left: 6px;
         font-size: 12px;

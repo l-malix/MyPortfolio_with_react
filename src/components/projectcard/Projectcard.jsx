@@ -20,7 +20,7 @@ export default function projectcard(props) {
           <span>
             <GitHubIcon />
           </span>
-          <a href="#portfolio">Github</a>
+          <a href={props.link}>Github</a>
         </div>
       </div>
     </div>
