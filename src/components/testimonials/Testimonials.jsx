@@ -66,8 +66,8 @@ export default function testimonials() {
     },
   ];
 
-  const skillCards = skillsList.map(function (s) {
-    return <Skillcard logo={s.logo} title={s.title} />;
+  const skillCards = skillsList.map(function (s, i) {
+    return <Skillcard key={i} logo={s.logo} title={s.title} />;
   });
 
   return (

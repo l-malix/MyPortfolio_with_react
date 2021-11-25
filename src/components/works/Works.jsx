@@ -42,9 +42,10 @@ export default function Works() {
     },
   ];
 
-  const pro = professional.map(function (p) {
+  const pro = professional.map(function (p, i) {
     return (
       <Expcard
+        key={i}
         logo={p.logo}
         title={p.title}
         company={p.company}

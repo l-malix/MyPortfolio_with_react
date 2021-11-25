@@ -15,9 +15,10 @@ export default class Portfolio extends Component {
     const url = "https://api.github.com/users/l-malix/repos";
     const response = await fetch(url);
     const data = await response.json();
-    const projects = data.map(function (s) {
+    const projects = data.map(function (s, i) {
       return (
         <Projectcard
+          key={i}
           title={s.name}
           description={s.description}
           technology={s.language}
