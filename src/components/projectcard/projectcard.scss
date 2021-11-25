@@ -3,7 +3,7 @@
 .projectCard {
   background-color: $mainColor;
   width: 300px;
-  height: 150px;
+  height: fit-content;
   color: white;
   padding: 15px;
   border-radius: 20px;
@@ -13,6 +13,7 @@
   transition: all 0.5s ease;
   justify-content: space-between;
   font-family: "Inconsolata", monospace;
+  overflow: visible;
 
   &:hover {
     background-color: rgb(207, 207, 207);
@@ -22,10 +23,12 @@
 
   h3,
   p {
+    overflow: visible;
     margin: 10px 10px;
     font-family: inherit;
   }
   .thirdline {
+    overflow: visible;
     display: flex;
     flex-direction: row;
     align-items: center;
